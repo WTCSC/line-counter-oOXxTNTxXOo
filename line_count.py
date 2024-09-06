@@ -1,4 +1,7 @@
 def line_count():
-  """
-  Reference the "Reading Files in Python" lesson to open the `file.txt` file, count the number of words in the file, and return the count.
-  """
+  #F for file      L for lines 
+  F = open('file.txt', 'r') #opens file.txt to be read
+  L = F.readlines() 
+  t = len(L) #t = lines count
+  F.close #closes file 
+  return t
